@@ -27,9 +27,20 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 ---
 
 ## 🧪 Program
-Add Code Here
+```
+i=int(input())
+j=int(input())
+z=int(input())
+
+f = lambda a, b,c: a+b+c
+
+print(f(i, j,z))
+```
 
 ## Sample Output
+![image](https://github.com/user-attachments/assets/5c0d0073-56a7-47fe-86de-2f1704b102eb)
+
 
 ## Result
 
+Thus,the Python program that defines a lambda function which takes two arguments a , b and c, and returns their sum is created successfully.
