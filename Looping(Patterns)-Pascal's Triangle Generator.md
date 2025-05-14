@@ -28,17 +28,24 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 
 ## 🧪 Program
 ```
-i=int(input())
-j=int(input())
-z=int(input())
+rows = int(input())
+coef = 1
 
-f = lambda a, b,c: a+b+c
-
-print(f(i, j,z))
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
+    print()
 ```
 
 ## Sample Output
-![image](https://github.com/user-attachments/assets/5c0d0073-56a7-47fe-86de-2f1704b102eb)
+![image](https://github.com/user-attachments/assets/b69e6b8e-4301-4dc7-839b-2e6f11e02892)
+
 
 
 ## Result
